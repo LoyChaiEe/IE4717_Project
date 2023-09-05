@@ -1,3 +1,9 @@
+/*
+==================================================
+General CSS 
+==================================================
+*/
+
 * {
 	box-sizing: border-box;
 }
@@ -7,6 +13,13 @@ body {
 	margin: 0;
 	min-height: 100vh;
 }
+
+/*
+==================================================
+Navbar CSS 
+==================================================
+*/
+
 ul {
   margin: 0;
   padding: 0;
@@ -49,15 +62,82 @@ a {
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 }
+
+/*
+==================================================
+Carousel CSS 
+==================================================
+*/
+
 .carousel {
   width: 100vw;
   height: 100vh;
   position: relative;
 }
+/* get rid of the inate padding, margin and style the base ul element has*/
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.slide{
+  position: absolute;
+  inset: 0; /* so called the margin to the left, right, top and bottom of the element is 0px */
+  opacity: 0;
+}
+/* CSS to show only one active image*/
+.slide[data-active]{
+  opacity: 1;
+}
+/* > means select all img element where the parent element has "slide"*/
+/* need to work on css for this as I have to readjust all image to fit a certain dimension*/
+.slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
-/* ================================= 
-  Media Queries
-==================================== */
+
+.carousel-button {
+  background: none;
+  border: none;
+  font-size: 4rem;
+  color: rgba(255, 255, 255, .5);
+  cursor: pointer;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  background-color: rgba(0, 0, 0, .1);/*rgba is rgb + opacity(4th value)*/
+  /*positioning*/
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  z-index: 2; /* to appear in-front of the image*/
+}
+/* focus is just helping accesibility for people pressing tab/onclick*/
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, .2); /*rgba is rgb + opacity(4th value)*/
+}
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+/*.class1.class2 highlight element with both class1 and class2*/
+.carousel-button.previous {
+  left: 1rem;
+}
+.carousel-button.next {
+  right: 1rem;
+}
+
+
+/* 
+==================================== 
+Media Queries
+==================================== 
+*/
 
 @media (min-width: 769px) {
 	.header,

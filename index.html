@@ -4,6 +4,7 @@
     <title>MAL Clone</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -15,12 +16,13 @@
           <li><a href="#">Contact</a></li>
       </ul>
 	  </header>
+    <!--You will realise inside the element tag there is special custom attribute, it starts with data-. make coding for css and js easier without overlapping with classes-->
     <section aria-label="newest photo">
-      <div class="carousel">
-        <button class="carousel-previous">&#8656</button>
-        <button class="carousel-next">&#8658</button>
-        <ul>
-        <li class="slide"><img src="images/anime/Anime_OshinoKo.jpg" alt="top_anime"></li>
+      <div class="carousel" data-carousel>
+        <button class="carousel-button previous" data-carousel-button="prev">&#8656</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8658</button>
+        <ul data-slides>
+        <li class="slide" data-active><img src="images/anime/Anime_OshinoKo.jpg" alt="top_anime"></li>
         <li class="slide"><img src="images/anime/cowboy_beebop.jpg" alt="top_anime"></li>
         <li class="slide"><img src="images/anime/fairy-tail.jpg" alt="top_anime"></li>
         <li class="slide"><img src="images/anime/umamusume.jpg" alt="top_anime"></li>
