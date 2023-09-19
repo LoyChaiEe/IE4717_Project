@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="header">
-		<a href="#"><img class="logo" src="images/logo.png"/></a>
+      <a href="#"><img class="logo" src="images/logo.png"/></a>
       <ul class="main-nav">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -16,14 +16,46 @@
           <li><a href="#">Contact</a></li>
       </ul>
 	  </header>
+    <section id="main">
+      <div>
+        <div class="welcome-message">
+         Welcome TO OUR ANIME BLOG SITE 
+         <p style="font-size: 14px;">Lorem ipsum, i just put this as placeholder, so what's up, how life, oh great, good to hear, im just typing this as i develop, this is auto pilot mode on</p>
+        </div>
+        <img src="images/anime_main.jpeg" id="image-overlay" />
+        <img src="images/anime_main.jpeg" id="image" />
+      </div>
+    </section>
+    <section id="meet-us">
+      <h1 class="meet-us">Meet-us</h1>
+      <div class="meet-us-card-wrapper">
+        <div id="editor">
+          <img id="editor-photo"src="images/elon-musk.jpg"/>
+          <h1>ELON MUSK</h1>
+          <h3 style="margin-top: 0px; margin-bottom: 100px;">Editor-in-Chief</h3>
+        </div>
+        <div id="writer">
+          <img id="writer-photo" src="images/mark-z.jpg"/>
+          <h1>MARK ZUCKERBURG</h1>
+          <h3 style="margin-top: 0px; margin-bottom: 100px;">Head Writer</h3>
+        </div>
+      </div>
+    </section>
+    <section id="blog-post">
+      <h1 class="blog-post">Newest Blog Post</h1>
+      <div class="blog-wrapper">
+        <div class="blog"><span style="width: 10%;">2023-08-08</span><div style="width: 85%;">Review of One Piece (Manga)</div><button>&#8658</button></div>
+        <div class="blog"><span style="width: 10%;">2023-08-08</span><div style="width: 85%;">Review of One Piece (Manga)</div><button>&#8658</button></div>
+    </section>
     <!--You will realise inside the element tag there is special custom attribute, it starts with data-. make coding for css and js easier without overlapping with classes-->
-    <section aria-label="newest photo">
+    <h1>Top 10 Anime</h1>
+    <section id="carousel" aria-label="newest photo">
       <div class="carousel" data-carousel>
         <button class="carousel-button previous" data-carousel-button="prev">&#8656</button>
         <button class="carousel-button next" data-carousel-button="next">&#8658</button>
         <ul data-slides>
-        <li class="slide" data-active><img src="images/anime/Anime_OshinoKo.jpg" alt="top_anime"></li>
-        <li class="slide"><img src="images/anime/cowboy_beebop.jpg" alt="top_anime"></li>
+        <li class="slide"><img src="images/anime/Anime_OshinoKo.jpg" alt="top_anime"></li>
+        <li class="slide" data-active><img src="images/anime/cowboy_beebop.jpg" alt="top_anime"></li>
         <li class="slide"><img src="images/anime/fairy-tail.jpg" alt="top_anime"></li>
         <li class="slide"><img src="images/anime/umamusume.jpg" alt="top_anime"></li>
         <li class="slide"><img src="images/anime/lycoris-recoil.jpg" alt="top_anime"></li>
@@ -33,6 +65,70 @@
         <li class="slide"><img src="images/anime/psycho_pass.jpg" alt="top_anime"></li>
         <li class="slide"><img src="images/anime/breaking-bad.jpg" alt="top_anime"></li>
         </ul>
+      </div>
+    </section>
+    <h1>Top 10 Manga</h1>
+    <section id="carousel" aria-label="newest photo">
+      <div class="carousel" data-carousel>
+        <button class="carousel-button previous" data-carousel-button="prev">&#8656</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8658</button>
+        <ul data-slides>
+        <li class="slide"><img src="images/anime/Anime_OshinoKo.jpg" alt="top_anime"></li>
+        <li class="slide"><img src="images/anime/cowboy_beebop.jpg" alt="top_anime"></li>
+        <li class="slide"><img src="images/anime/fairy-tail.jpg" alt="top_anime"></li>
+        <li class="slide"><img src="images/anime/umamusume.jpg" alt="top_anime"></li>
+        <li class="slide"><img src="images/anime/lycoris-recoil.jpg" alt="top_anime"></li>
+        <li class="slide"><img src="images/anime/Gintama.jpg" alt="top_anime"></li>
+        <li class="slide"data-active><img src="images/anime/stein_gate.png" alt="top_anime"></li>
+        <li class="slide"><img src="images/anime/one_piece.jpg" alt="top_anime"></li>
+        <li class="slide"><img src="images/anime/psycho_pass.jpg" alt="top_anime"></li>
+        <li class="slide"><img src="images/anime/breaking-bad.jpg" alt="top_anime"></li>
+        </ul>
+      </div>
+    </section>
+    <section id="music">
+      <h1 class="music">Meet-us</h1>
+      <div class="music-wrapper">
+        <div class="card">
+          <div class="overlayer">
+            <img class="play-button" src="images/playbutton.png"/>
+			    </div>
+			    <img src="https://i.pinimg.com/736x/02/b8/94/02b894f7ea6ad9f724648ee511ad018f--edm-music-house-music.jpg" alt="">
+			    <div class="title">
+			    </div>
+		    </div>
+        <div class="card">
+          <div class="overlayer">
+            <img class="play-button" src="images/playbutton.png"/>
+			    </div>
+			    <img src="https://i.pinimg.com/736x/02/b8/94/02b894f7ea6ad9f724648ee511ad018f--edm-music-house-music.jpg" alt="">
+			    <div class="title">
+			    </div>
+		    </div>	
+        <div class="card">
+          <div class="overlayer">
+            <img class="play-button" src="images/playbutton.png"/>
+			    </div>
+			    <img src="https://i.pinimg.com/736x/02/b8/94/02b894f7ea6ad9f724648ee511ad018f--edm-music-house-music.jpg" alt="">
+			    <div class="title">
+			    </div>
+		    </div>
+        <div class="card">
+          <div class="overlayer">
+            <img class="play-button" src="images/playbutton.png"/>
+			    </div>
+			    <img src="https://i.pinimg.com/736x/02/b8/94/02b894f7ea6ad9f724648ee511ad018f--edm-music-house-music.jpg" alt="">
+			    <div class="title">
+			    </div>
+		    </div>	
+        <div class="card">
+          <div class="overlayer">
+            <img class="play-button" src="images/playbutton.png"/>
+			    </div>
+			    <img src="https://i.pinimg.com/736x/02/b8/94/02b894f7ea6ad9f724648ee511ad018f--edm-music-house-music.jpg" alt="">
+			    <div class="title">
+			    </div>
+		    </div>	
       </div>
     </section>
   </body>
